@@ -83,6 +83,7 @@ data = {'title':filterd_name,'price':filtered_price}
 with open('webScrapper.csv','a',newline='') as file:
 
 	dict_ob = csv.DictWriter(file, fieldnames = field_names)
+	
 	#dict_ob.writeheader()
 	
 	dict_ob.writerow(data)
